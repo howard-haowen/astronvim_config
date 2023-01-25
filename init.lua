@@ -9,7 +9,7 @@ local config = {
         -- Configure AstroNvim updates
         updater = {
                 remote = "origin", -- remote to use
-                channel = "nightly", -- "stable" or "nightly"
+                channel = "stable", -- "stable" or "nightly"
                 version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
                 branch = "main", -- branch name (NIGHTLY ONLY)
                 commit = nil, -- commit hash (NIGHTLY ONLY)
@@ -70,12 +70,6 @@ local config = {
 
         -- Set dashboard header
         header = {
-                " █████  ███████ ████████ ██████   ██████",
-                "██   ██ ██         ██    ██   ██ ██    ██",
-                "███████ ███████    ██    ██████  ██    ██",
-                "██   ██      ██    ██    ██   ██ ██    ██",
-                "██   ██ ███████    ██    ██   ██  ██████",
-                " ",
                 "    ███    ██ ██    ██ ██ ███    ███",
                 "    ████   ██ ██    ██ ██ ████  ████",
                 "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
@@ -137,7 +131,7 @@ local config = {
         lsp = {
                 -- enable servers that you already have installed without mason
                 servers = {
-                        -- "pyright"
+                        "pyright"
                 },
                 formatting = {
                         -- control auto formatting on save
@@ -204,6 +198,7 @@ local config = {
                         ["<leader>bc"] = { "<cmd>BufferLinePickClose<cr>", desc = "Pick to close" },
                         ["<leader>bj"] = { "<cmd>BufferLinePick<cr>", desc = "Pick to jump" },
                         ["<leader>bt"] = { "<cmd>BufferLineSortByTabs<cr>", desc = "Sort by tabs" },
+                        ["<leader>tm"] = { "<cmd>Vifm<cr>", desc = "File manager Vifm" },
                         -- quick save
                         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
                 },
