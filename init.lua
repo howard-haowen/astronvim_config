@@ -26,7 +26,7 @@ local config = {
         },
 
         -- Set colorscheme to use
-        colorscheme = "default_theme",
+        colorscheme = "AstroMars",
 
         -- Add highlight groups in any theme
         highlights = {
@@ -46,7 +46,7 @@ local config = {
                         number = true, -- sets vim.opt.number
                         spell = false, -- sets vim.opt.spell
                         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-                        wrap = false, -- sets vim.opt.wrap
+                        wrap = true, -- sets vim.opt.wrap
                 },
                 g = {
                         mapleader = " ", -- sets vim.g.mapleader
@@ -217,7 +217,10 @@ local config = {
                         -- You can also add new plugins here as well:
                         -- Add plugins, the packer syntax without the "use"
                         -- { "vimwiki/vimwiki.nvim" },
+                        -- For using commands like :Ranger or :Vifm in Neovim 
                         { "is0n/fm-nvim" },
+                        -- For adding syntax highlighting to kitty config
+                        { "fladson/vim-kitty"},
                         -- { "andweeb/presence.nvim" },
                         -- {
                         --   "ray-x/lsp_signature.nvim",
